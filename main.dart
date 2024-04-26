@@ -1,32 +1,14 @@
+
 import 'package:flutter/material.dart';
-
-void main(){
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget{
+void main() => runApp(MyApp());
+class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
-    return MaterialApp(
-      title: 'Gestures',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Gestures'),
-        ),
-        body: Center(
-          child: GestureDetector(
-            child: Container(
-              width: 100,
-              height: 40,
-              color: Colors.green,
-              child: Text('Click Me')
-            ),
-            onTap: () {
-              print('Box Clicked');
-            },
-          )
-        )
-      )
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(title: Text('Insert Image Demo')),
+      body: Center(
+        child: Image.asset('assets/images/famtitlab.jpg'),
+      ),
+    ),
+  );
 }
